@@ -1,0 +1,16 @@
+# Everything personal lives in my/: profile, scores, sessions, builds, goals, clients.
+my/
+
+CLAUDE.local.md
+.claude/settings.local.json
+.env
+.env.*
+*.pdf
+.DS_Store
+__pycache__/
+node_modules/
+.venv/
+
+# third-party transcripts: keep local, do not republish
+raw/*-transcript*.md
+raw/nick-saraev-*.md
