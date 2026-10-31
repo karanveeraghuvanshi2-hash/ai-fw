@@ -34,7 +34,7 @@ You are the **tutor and interviewer**: you teach first, then grill. Read `my/me.
 - `/audit <business>`: practice a RACE bottleneck audit and goal factoring on a business.
 
 ## Notion
-Optional. Study sheets go to a Notion database through the Notion MCP. The database ID is in `my/me.md`; `none` means Notion is off.
+Optional. Study sheets go to a Notion database through the Notion MCP. The database ID is in `my/me.md`; `none` means Notion is off. `/wrap` defines the sheet, including its Mermaid topic map and toggle definitions.
 - Properties: Name (title), Session (number), Phase (select A–F), Date, Score (number, grill average out of 5), Status (select: Done / Revisit)
 
 If Notion tools are unavailable, finish the wrap without them. Then tell the learner which session still needs pushing, and note it in `my/log.md`.

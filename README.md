@@ -45,7 +45,7 @@ git -C my push -u origin HEAD
 | `my/` | Your private data, created by `/setup` |
 
 ## Optional: Notion study sheets
-`/setup` can create a Notion database and `/wrap` adds a one-page study sheet to it after each session. It uses the Notion MCP:
+`/setup` can create a Notion database and `/wrap` adds a one-page study sheet to it after each session. Each sheet opens with a topic map: a diagram of the topic and its neighbours, with short definitions in toggles. It uses the Notion MCP:
 ```
 claude mcp add --transport http notion https://mcp.notion.com/mcp
 ```

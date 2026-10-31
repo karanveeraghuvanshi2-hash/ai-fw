@@ -19,12 +19,12 @@ Part 2 has to fit on one Notion page: at most about 700 words. Use these section
 ```
 ## Part 2 — Study Sheet: <Topic>
 **TL;DR** — 3 lines.
+### Topic map
+Mermaid diagram, then one `- **Term** — definition` bullet per node.
 ### Mental model
 ASCII diagram + 2-line caption.
 ### Core concepts
 5–8 bullets, each one idea.
-### Key terms
-| Term | Meaning |  (5–8 rows)
 ### Interview Q&A
 5 questions, each with a crisp 2–4 line answer. Favour the ones the learner scored lowest.
 ### Pitfalls
@@ -34,6 +34,13 @@ ASCII diagram + 2-line caption.
 ### Go deeper
 3 resources (paper / docs / video), real URLs only.
 ```
+
+The Topic map gives the whole topic at a glance, and it is the sheet's only glossary:
+- Use a fenced `mermaid` block with `flowchart LR`, with the topic as the root. It doesn't count toward the word limit.
+- Use 8–12 nodes, at most 3 levels deep: the topic's parts, plus neighbouring topics from `my/topics.md`.
+- Label every node `"Term: gloss"`, in double quotes, with a gloss of 5 words or fewer.
+- Keep each bullet's definition to 15 words or fewer. Skip the root.
+- Use text only, no images.
 
 ## 3. Write the file
 Write `my/sessions/NNN-slug.md`:
@@ -57,7 +64,7 @@ Date: YYYY-MM-DD · Phase: <A–F> · Grill score: <avg>/5
 ## 5. Notion
 Skip this step if the database ID in `my/me.md` is `none`. Otherwise, create a page in that database.
 - Set the properties: Name `NNN — Topic`, Session, Phase, Date, Score, and Status (`Done` if the average is 3.5 or higher, else `Revisit`).
-- The page body is Part 2 only.
+- The page body is Part 2 only, with one change: each Topic map bullet becomes `<toggle heading="h4">`, with the term as its title and the definition as its child.
 
 If Notion fails, add `(notion pending)` to the end of the log line in `my/log.md`.
 
